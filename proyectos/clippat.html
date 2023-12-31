@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://use.fontawesome.com/a40552d067.js"></script>
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 1500px;
+      background-color: gray;
+    }
+
+    .contener {
+      background-color: green;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+      top: 0;
+      clip-path: circle(55px at 50% 0%);
+    }
+     .contener:active {
+      clip-path: circle(100% at 50% %);
+     }
+
+
+    .contener>p {
+      color: white;
+    }
+
+    .cont {
+      font-size: 25px;
+      padding: 10;
+      cursor: pointer;
+
+    }
+
+    .cont:hover {
+      animation: rotar 1.5s infinite;
+    }
+
+    @keyframes rotar {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      20% {
+        transform: rotate(10deg);
+      }
+
+      40% {
+        transform: rotate(-15deg);
+      }
+
+      60% {
+        transform: rotate(15deg);
+      }
+
+      80% {
+        transform: rotate(-10deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+    .navegacion {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .navegacion li {
+
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .navegacion li a {
+      text-decoration: none;
+      font-size: 40px;
+      letter-spacing: 2px;
+      padding: 15px 30px;
+      color: #f8f8f8;
+      text-transform: uppercase;
+      transition: .2s ease all;
+
+    }
+
+    .navegacion li a:hover {
+      transform: scale(2.0);
+      background-color: purple;
+
+    }
+
+    .container {
+      display: block;
+      text-align: center;
+      margin: 100px auto;
+      max-width: 1000px;
+      min-height: 200px;
+      padding: 20px;
+      background-color: aliceblue;
+      
+    }
+     .container h1 {
+       font-size: 40px;
+       color: black;
+     }
+     .container p {
+       font-size: 20px;
+       color: red;
+     }
+
+
+
+  </style>
+
+</head>
+
+<body>
+  <div class="contener" id="idear">
+    <p class="cont" id="silm">
+      <i class="fa fa-home" aria-hidden="true"></i>
+    </p>
+
+    <nav class="navegacion">
+      <ul class="menu" id="menu">
+
+        <li><a href="#">inicio</a></li>
+        <li><a href="#">contacto</a></li>
+        <li><a href="#">acerca</a></li>
+
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="container" id="combinar">
+    <h1>esto es un texto</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis accusamus suscipit, ducimus iure
+      praesentium, itaque nihil quisquam libero cum dolorem consectetur eius ratione! Eum unde obcaecati officiis
+      dolore fugiat. Voluptatem tempora sunt atque adipisci illo nostrum error nam unde pariatur! </p>
+
+  </div>
+
+</body>
+
+</html>

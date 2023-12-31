@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>provando los estilos css
+    </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: red;
+            padding: 40px;
+            max-width: 1000px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+
+        }
+
+        .container>div {
+            background-color: yellow;
+            min-width: 125px;
+            width: 100%;
+            height: 100px;
+            display: grid;
+
+        }
+
+
+
+
+        @media screen and (max-width: 480px) {
+            .container {
+                background-color: #000;
+                padding: 40px;
+                max-width: 480px;
+                margin: 10px auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 10px;
+
+            }
+           .container .carlos{
+            background-color: red;
+        
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div clss="carlos">1 esto es un texto</div>
+        <div>2 esto es un texto</div>
+        <div>3 esto es un texto</div>
+        <div>4 esto es un texto</div>
+        <div>5 esto es un texto</div>
+        <div>6 esto es un texto</div>
+        <div>7 esto es un texto</div>
+        <div>8 esto es un texto</div>
+        <div>9 esto es un texto</div>
+        <div></div>
+
+    </div>
+
+</body>
+
+</html>

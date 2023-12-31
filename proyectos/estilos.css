@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+#overview {
+    width: 100%;
+    height: 400px;
+    background-color: yellow;
+}
+
+#fixed {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    top: 200px;
+}
+
+.rectangulo {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    position: relative;
+    left: 100px;
+    z-index: -1;
+    margin: 2px;
+}
+
+.rectan {
+    width: 300px;
+    height: 300px;
+    background-color: purple;
+    position: static ;
+    top: 0;
+    left: 100px;
+}
+
+.header {
+    background-color: red;
+    height: 200px;
+}
+
+.moto {
+    position: sticky;
+    top: 0;
+}
+
+#manipulando{
+    height: 100%;
+    background-color:peru;
+    overflow: scroll; 
+    height: 100px;
+}
+
+#tampa{
+    background-color:red;
+    width: 50%;
+
+}

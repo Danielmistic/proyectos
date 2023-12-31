@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecreen </title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(138, 118, 177);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+
+        .contenedor {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, auto);
+            align-content: center;
+
+        }
+
+        .contenedor>article,
+        .contenedor .header,
+        .contenedor .contenido,
+        .contenedor .saider,
+        .contenedor .footer {
+            padding: 20px;
+            background-color: gray
+        }
+
+        .contenedor .header {
+            background-color: blue;
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+
+        .contenedor .contenido {
+            background-color: yellow;
+            grid-column: span 2;
+        }
+
+        .contenedor .saider {
+            grid-column: 3/4;
+            background-color: red;
+
+            grid-row: 2/3;
+        }
+
+        .contenedor>article {
+            background-color: green;
+            height: 70px;
+        }
+        .section{
+            background-color:aquamarine;
+            grid-column: 1/-1;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .contenedor .footer {
+            background-color: #000;
+            color: #fff;
+            grid-column-start: 1;
+            grid-column-end: -1;
+            text-align: center;
+        }
+
+
+
+        @media screen and (max-width: 480px) {
+            body {
+                background-color: gainsboro;
+            }
+
+            .contenedor .contenido {
+                background-color: aqua;
+                grid-column-start: 1;
+                grid-column-end: -1;
+            }
+
+            .contenedor .saider {
+                background-color: antiquewhite;
+                grid-row: 3/4;
+                grid-column-start: 1;
+                grid-column-end: -1;
+            }
+
+            .contenedor>article {
+                grid-column-start: 1;
+                grid-column-end: -1;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <h1>esto es un titulo </h1>
+        </header>
+
+        <main class="contenido">
+            <h2>esto es in articilo que ayuda a que sea una mejor persona </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem alias quibusdam impedit odio
+                corporis hic cum, quasi cupiditate ex esse inventore dolorem dolor vitae molestias blanditiis magnam
+                reiciendis autem tempore voluptates. Ex ipsa fugiat magnam blanditiis! Optio, in nostrum molestiae
+                mollitia atque provident temporibus laudantium deserunt! Voluptate, molestiae ducimus? Nam voluptatem
+                explicabo atque laborum illo odit, sit molestias velit repellendus facilis qui eum voluptas cum
+                accusantium aut provident iusto.<br><br>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea inventore ipsa aperiam quae sequi amet nisi
+                unde nesciunt minus, ut dolore, itaque explicabo? Necessitatibus numquam magnam perspiciatis illum alias
+                labore nam? Alias eius accusamus vitae libero ea voluptate inventore sint qui, in placeat! Unde officia
+                dolor nihil distinctio earum deleniti illum, aut voluptate quae consequuntur velit ab sit perspiciatis,
+                praesentium reiciendis doloremque nesciunt molestias hic numquam tenetur dicta tempora rerum.<br><br>
+
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, ipsa dolorum expedita sunt molestias
+                mollitia repudiandae rerum ea culpa optio vero harum perferendis animi minus eos labore tempora! Nam,
+                eum.
+            </p>
+        </main>
+
+
+        <aside class="saider">
+            <h2>esto es un aside </h2>
+            <img src="img\Arbolito_dolar_parabuenosaires.jpg" width="auto" height="auto" alt="esta imagen es un sol">
+        </aside>
+
+
+
+        <article>
+            <h3>esto es un articulo </h3>
+        </article>
+
+        <article>
+            <h3>esto es un articulo </h3>
+        </article>
+
+        <article>
+            <h3>esto es un articulo </h3>
+        </article>
+
+        <section class="section">
+            <h1>esto es un titulo</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt maiores consectetur excepturi
+                obcaecati optio beatae illum dolores possimus aperiam minima suscipit eveniet doloremque, repellendus
+                architecto deserunt tenetur sequi nihil rem voluptatibus nisi earum eos quis inventore minus. Sapiente
+                consequuntur adipisci nesciunt quidem delectus asperiores eveniet, nihil ad, earum, recusandae rem
+                labore assumenda veritatis velit magni cumque ab aliquam voluptas fugiat. Aspernatur placeat ullam error
+                praesentium quidem reiciendis et quod fuga?</p>
+        </section>
+
+        <footer class="footer">derechos reservados para el día 24/12/2022</footer>
+
+    </div>
+
+</body>
+
+</html>

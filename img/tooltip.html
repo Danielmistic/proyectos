@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tootips</title>
+    <style>
+        .container{
+         text-align: center;
+         background-color: aliceblue;
+         margin: 50 auto;
+        }
+
+       .lo-primero .lo-segundo{
+        visibility: hidden;
+        background-color: black;
+        text-align:center ;
+        color: white;
+        width:120px;
+        padding: 5px;
+        border-radius:4px;
+
+        position:absolute;
+        z-index: 1;
+        /* top:-5; */
+        /* left: 380px; */
+        }
+
+        .lo-primero:hover .lo-segundo{
+            visibility: visible;
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>esto es un tooltip</h1>
+        <p class="lo-primero">esto es algo que no se que es lo que estoy haciendo
+            <span class="lo-segundo">este es el tooltip </span>
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat blanditiis officiis iste unde consequatur
+            odio in harum? Ipsam blanditiis ipsa voluptas consectetur cumque libero accusamus? Quasi sint soluta nam
+            beatae.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: lightseagreen;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            background-color: beige;
+            width: 90%;
+            max-width: 600px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 75% 25%;
+        }
+
+        .container .form {
+            background-color: yellow;
+            display: grid;
+           grid-gap: 20px;
+           
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form">
+            <form>
+                <h1>formulario de inscripción</h1>
+                <P>este formulario nos ayudara a saber quien eres </P>
+
+                <label for="name">name </label>
+                <input type="name" id="name" name="name" placeholder="name">
+
+                <label for="lastname">lastname</label>
+                <input type="text" id="lastname" name="lastname" placeholder="lastname">
+
+                <label for="username">username</label>
+                <input type="username " id="username" name="username" placeholder="username">
+
+                <input type="submit" id="submit" name="submit">enviar</input>
+
+            </form>
+
+        </div>
+
+        <aside class="aside">
+            <h1>about</h1>
+            <p>eso es un apartado de lo que vamos a decir en el formulario de nuestro formulario</p>
+        </aside>
+
+        <footer class="footer">derechos reservados para el 25/12/2022</footer>
+
+    </div>
+
+</body>
+
+</html>

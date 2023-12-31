@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: lightseagreen;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            background-color: beige;
+            width: 90%;
+            max-width: 600px;
+            margin: 100px auto;
+            display: grid;
+            grid-template-columns: 75% 25%;
+            box-shadow: 3px 5px #000 ;
+        }
+
+        .container .form {
+            background-color: yellow;
+            display: grid;
+            grid-template-rows: 100px 1fr ;
+            padding: 15px 30px;
+            text-align: center;
+        }
+        .container .footer{
+         background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form">
+            
+            <div class="header">
+                <h1>formulario de inscripción</h1>
+                <P>este formulario nos ayudara a saber quien eres </P><br><br><br>
+            </div>
+            <form>
+               
+                <label for="name">name </label>
+                <input type="name" id="name" name="name" placeholder="name"><br><br><br>
+
+                <label for="lastname">lastname</label>
+                <input type="text" id="lastname" name="lastname" placeholder="lastname"><br><br><br>
+
+                <label for="username">username</label>
+                <input type="username " id="username" name="username" placeholder="username"><br><br><br>
+
+                <input type="submit" id="submit" name="submit">enviar</input><br><br><br>
+
+                
+            </form>
+
+        </div>
+
+        <aside class="aside">
+            <h1>about</h1>
+            <p>eso es un apartado de lo que vamos a decir en el formulario de nuestro formulario 
+                pues la verdad no se que mas escribir pero en esas estoy. y espero tener mas ayuda de 
+                mis colaboradores para el sigiente ambito de mi profecion ya sea mala o buenas en
+                a yo que se estoy escribiendo bobadas para rellenar el espacio que tengo en el aside
+            </p>
+        </aside>
+
+    <footer class="footer">derechos reservados para el 25/12/2022</footer>
+
+    </div>
+
+</body>
+
+</html>

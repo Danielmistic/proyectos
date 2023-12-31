@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+
+        :root{
+            --color-primario: purple;
+        }
+        /* este estilo nos ayuda con un transform que hara que nuestro div me mueva de un lado  a otro  */
+        .container {
+            width: 300px;
+            height: 300px;
+            background-color: #f65f;
+            border: 2px dotted black;
+            border-radius: 6px;
+            margin: 50px auto;
+
+        }
+
+        .container:hover {
+            transform: translate(200px);
+        }
+
+        /* este estilo nos ayuda con un transform que hara que nuestro div me mueva en direccion de las manecillas del
+        reloj */
+        /* para que la trasform haga lo comtrario usa valores negativos */
+        .containe {
+            width: 300px;
+            height: 300px;
+            background-color: #f65f;
+            border: 2px dotted black;
+            border-radius: 6px;
+            margin: 70px auto;
+        }
+
+        .containe:hover {
+            transform: rotate(40deg);
+        }
+
+        /* este estilo css nos ayudara para que ek transform agtrande o haga mas pequeño el div */
+        .contain {
+            width: 300px;
+            height: 300px;
+            background-color: var(--color-primario);
+            border: 2px dotted black;
+            border-radius: 6px;
+            margin: 70px auto;
+
+        }
+
+        .contain:hover {
+            transform: scale(0.5, 0.5);
+        }
+
+        /* este eslito nos ayudara para que podamos torcer los divs segun los degradados en el volor  */
+        .contai {
+            width: 300px;
+            height: 300px;
+            background-color: #f65f;
+            border: 2px dotted black;
+            border-radius: 6px;
+            margin: 70px auto;
+        }
+
+        .contai:hover {
+            transform: skewx(20deg);
+        }
+
+        .conta {
+            width: 300px;
+            height: 300px;
+            background-color: #f65f;
+            border: 2px dotted black;
+            border-radius: 6px;
+            margin: 70px auto;
+        }
+
+        .conta:hover {
+            transform: matrix(1, -0.3, 0, 1, 0, 0);
+        }
+
+        .cont {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            border: 2px dotted black;
+            border-radius: 6px;
+            margin: 70px auto;
+        }
+        .cont:hover{
+        transform: rotate(150deg);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="manipular">
+        <div class="container"></div>
+        <div class="containe"></div>
+        <div class="contain"></div>
+        <div class="contai"></div>
+        <div class="conta">g</div>
+        <div class="cont"></div>
+
+    </div>
+</body>
+
+</html>

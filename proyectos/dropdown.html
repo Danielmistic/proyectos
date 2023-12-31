@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .dropdown-container {
+        position: relative
+    }
+
+    
+    .dropdown-container ul { 
+    position: absolute;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.4s;
+    }
+
+    .dropdown-container:hover ul { 
+max-height: 400px;
+}
+
+</style>
+</head>
+<body>
+    <div class="dropdown-container">
+        <span>mis opciones<span>
+        <ul>
+            <li>configuración</li>
+            <li>mi perfil</li>
+            <li>mi secion</li>
+        </ul>
+
+    </div>
+</body>
+</html>

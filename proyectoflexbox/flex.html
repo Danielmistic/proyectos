@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bar{
+            width: 100%;
+            height: auto;
+            background-color: gray;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+        }
+        .fronters{
+            background-color:yellow;
+            padding: 10px;
+            margin: 10px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .container {
+            padding: 20px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        .item {
+            margin: auto;
+            background-color: red;
+            width: 200px;
+            height: auto;
+            border: solid black 2px;
+            overflow: scroll;
+            padding: 20px;
+
+        }
+
+        @media screen and (min-width: 1251px) {
+            .container {
+                background-color: beige;
+                flex-wrap: wrap;
+            }
+
+            .item {
+                width: 50%;
+
+            }
+            .fronters{
+                width: 24%
+            }
+        }
+
+
+        @media screen and (max-width: 1250px) {
+            .container {
+                background-color: purple;
+            }
+
+            .item{
+                width: 50%;
+            }
+
+            .fronters{
+                width: 20%;
+            }
+        }
+
+        @media screen and (max-width: 950px) {
+            .container {
+                background-color: pink;
+            }
+
+            .item {
+                color: yellowgreen;
+                width: 90%;
+                color: white;
+            }
+            .fronters{
+                width: 45%
+            }
+
+        }
+
+        @media screen and (max-width: 450px) {
+            .container {
+                background-color: black;
+            }
+            
+            .item{
+                color: white;
+            }
+
+            .fronters{
+                width: 100%;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="bar">
+<div class="fronters" id="inicio">inicio</div>
+<div class="fronters" id="ayuda">ayuda</div>
+<div class="fronters" id="contenido">contenido</div>
+<div class="fronters" id="productos">producto</div>
+</div>
+
+    <main class="container ">
+        <section class="item">
+            <h1>este es un titulo </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi quaerat aspernatur minus eaque veniam
+                deleniti hic, eius atque facere possimus consectetur similique optio veritatis ad eos harum quibusdam,
+                modi rerum temporibus, illo animi enim architecto. Voluptas eveniet ut officia maiores reiciendis
+                adipisci dicta voluptatem, dolor vitae deleniti, soluta quasi laborum!</p>
+        </section>
+        <section class="item">
+            <h1>este es un titulo </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi quaerat aspernatur minus eaque veniam
+                deleniti hic, eius atque facere possimus consectetur similique optio veritatis ad eos harum quibusdam,
+                modi rerum temporibus, illo animi enim architecto. Voluptas eveniet ut officia maiores reiciendis
+                adipisci dicta voluptatem, dolor vitae deleniti, soluta quasi laborum!</p>
+        </section>
+        <section class="item">
+            <h1>este es un titulo </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi quaerat aspernatur minus eaque veniam
+                deleniti hic, eius atque facere possimus consectetur similique optio veritatis ad eos harum quibusdam,
+                modi rerum temporibus, illo animi enim architecto. Voluptas eveniet ut officia maiores reiciendis
+                adipisci dicta voluptatem, dolor vitae deleniti, soluta quasi laborum!</p>
+        </section>
+        <section class="item">
+            <h1>este es un titulo </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi quaerat aspernatur minus eaque veniam
+                deleniti hic, eius atque facere possimus consectetur similique optio veritatis ad eos harum quibusdam,
+                modi rerum temporibus, illo animi enim architecto. Voluptas eveniet ut officia maiores reiciendis
+                adipisci dicta voluptatem, dolor vitae deleniti, soluta quasi laborum!</p>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

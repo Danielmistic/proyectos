@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ncition</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: 2px dashed black;
+            /* este codigo nos ayuda, para que podamos acceder a los cambios que estamos cambiando */
+            transition-property: width, background-color;
+            /* este codigo nos ayuda para poner el tiempo en el que cambiara la trancisión  */
+            transition-duration: 2s;
+            /* este codigo nos ayudara para que podamos ver el tiempo que tomara la curva de velosidad en la trancision
+            por ejemplo 
+            linear="este codigo nos ayuda para que la curva de aceleracion se mantenga estable"
+            ease="nos ayuda para deterninar que comiense rapido y desacelere al final  "
+            ease-in="nos ayudara patra que la trancision comienze en velosidad y termine normal"
+            ease-out="este codigo nos ayudara para que la trancision comiense con velosidad normal y termine la corvatura con velosidad"
+            ease-in-out="este codigo nos ayudara para que la trancicion cominese la corvatura con velosidad y  termine con velosidad " */
+            transition-timing-function: ease-out ; 
+            /* este codigo nos ayuda para que la trancision nos ayude para que se demore en el momento que hagamos 
+            hover en el elemento que le demos el enfoque */
+            transition-delay: 1s;
+
+        }
+        .container:hover{
+            width: 400px;
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div><br><br><br><br><br>
+
+    <div class="minombre"><h1>Daniel Aristizabal Garcia</h1></div>
+    <div class="item">Desde Cero a Avanzado</div>
+</body>
+</html>

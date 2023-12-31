@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <style>
+        .container {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: 2px solid;
+            position: relative;
+            animation-name: mianimacion;
+            animation-delay: 2s;
+            animation-timing-function: ease-in-out;
+            animation-duration: 5s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes mianimacion {
+            0% {
+                background-color: red;
+                left: 0;
+                top: 0;
+            }
+
+            25% {
+                background-color: pink;
+                left: 300px;
+                top:0;
+            }
+
+            50% {
+                background-color: blue;
+                left: 300px;
+                top: 300px;
+            }
+
+            75% {
+                background-color: aqua;
+                left: 300px;
+                top: 300px;
+                left:0px;
+            }
+
+            100% {
+                background-color: yellow;
+                left: 300px;
+                top: 300px;
+                left: 0px;
+                top:0;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container ">
+
+
+    </div>
+
+</body>
+
+</html>

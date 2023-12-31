@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: gray;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, auto);
+        }
+
+        .contenedor > div,
+        .contenedor .header,
+        .contenedor .aside,
+        .contenedor .contenido,
+        .contenedor .footer {
+            background-color: white;
+            color: #000;
+            padding: 20px;
+        }
+
+        .contenedor .header {
+            background-color: blue;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .contenedor .contenido {
+            grid-column: span 2;
+        }
+
+        .contenedor .aside {
+            grid-column: 3/4;
+            background-color: orange;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            grid-row: 2/4;
+        }
+
+        .contenedor .widget-1,
+        .contenedor .widget-2 {
+            background-color: dodgerblue;
+            height: 100px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contenedor .footer {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: red;
+        }
+
+
+
+        @media screen and (max-width: 480px) {
+            body{
+                background-color:black;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <h1>header</h1>
+        </header>
+        <main class="contenido">
+            <h2>contenido</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque magni expedita veritatis enim sunt odio
+                animi, iure repudiandae necessitatibus mollitia dolorum recusandae reprehenderit sit placeat magnam
+                natus quaerat eveniet? Quibusdam blanditiis ea adipisci minima, molestias, doloremque esse dolorum
+                laboriosam totam, cupiditate modi dignissimos suscipit velit. In beatae tenetur non mollitia voluptates
+                enim ullam, tempora soluta maiores earum fuga accusamus quas molestiae nisi repellat expedita quis
+                labore iste error illo minus culpa! Est neque ipsa quae? Aperiam quam odio at iusto nisi, expedita fugit
+                sit blanditiis ullam omnis voluptatibus voluptatum fuga excepturi quae quod dolores aut quos! Ullam
+                cupiditate nostrum voluptatum!
+                <br><br>
+
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iusto esse corporis explicabo
+                quam exercitationem repudiandae delectus labore, placeat ratione voluptatibus eum ab aperiam dolor
+                maxime? Aut eum incidunt explicabo voluptatum inventore doloremque, dolorem temporibus porro si
+                quod corporis laudantium facere quam esse! Laboriosam officiis sequi qui? Quaerat animi eligendi
+                porro nisi deserunt. Ratione facere mollitia minima iste, aspernatur delectus amet adipisci
+                laboriosam aut nulla fugiat soluta quo omnis atque rerum praesentium perspiciatis deserun
+                voluptatum harum asperiores? Veritatis, optio dolore asperiores aliquid laboriosam culpa. Fugit
+                exercitationem! Labore distinctio repudiandae, facere voluptatem, quam omnis ab enim illum
+                repellendus quasi, laboriosam officia.
+
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa explicabo odit distinctio veniam quam
+                enim cumque inventore exercitationem deserunt dolorum obcaecati expedita sit consequuntur placeat
+                libero eos nam reiciendis, rem eligendi architecto voluptatum. Porro a repudiandae quas hic
+                consectetur distinctio exercitationem perspiciatis, laborum earum accusantium explicabo, totam ab in
+                minima.
+            </p>
+
+        </main>
+
+        <aside class="aside">
+            <h2>saidbar</h2>
+        </aside>
+
+        <div class="widget-1">
+            <h3>widjet-1</h3>
+        </div>
+
+        <div class="widget-2">
+            <h3>widjet-2</h3>
+        </div>
+
+        <footer class="footer"> pie de pajina </footer>
+
+
+    </div>
+
+</body>
+
+</html>
